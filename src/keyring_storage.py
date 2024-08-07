@@ -20,6 +20,9 @@ def set_value(key: str, value: str) -> None:
     except kr.errors.KeyringError as error:
         print('Error setting password for key:', key)
         print('Error:', error)
+    except Exception as error:
+        print('Error:', error)
+        return error  
 
 
 def get_value(key: str):
@@ -37,6 +40,9 @@ def get_value(key: str):
         print('Error retrieving password for key:', key)
         print('Error:', error)
         return error
+    except Exception as error:
+        print('Error:', error)
+        return error  
 
 
 def delete_value(key: str) -> None:
