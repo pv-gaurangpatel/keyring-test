@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "keyring-test"
+version = "0.1.0"
+description = ""
+authors = ["pv-gaurangpatel <gaurang@pointsville.com>"]
+readme = "README.md"
+
+# Packages configuration
+packages = [
+    { include = "src" }
+]
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+keyring = "^25.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Scripts
+[tool.poetry.scripts]
+keyring-test = "src.main:main"
