@@ -38,4 +38,3 @@ poetry run keyring-test
 ### Usage
 
 The application allows you to set and get secrets using keyring storage.
-

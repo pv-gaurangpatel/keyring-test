@@ -10,8 +10,7 @@ packages = [
     { include = "src" }
 ]
 [tool.poetry.dependencies]
-python = "^3.12"
-
+python = ">=3.10"
 
 [tool.poetry.group.dev.dependencies]
 keyring = "^25.3.0"
